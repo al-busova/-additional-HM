@@ -1,0 +1,26 @@
+.our-masters {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+  .wrapper-masters {
+    display: flex;
+  }
+  .item-master {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+  .item-master:not(:last-child) {
+    margin-right: 30px;
+  }
+  .master {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: center;
+    color: var(--add-textcolor-two);
+  }
+  .position {
+    font-size: 14px;
+    line-height: 1.36;
+    text-align: center;
+    color: var(--accent-color);
+  }

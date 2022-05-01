@@ -1,0 +1,20 @@
+address .link,
+.timework {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  color: var(--add-textcolor);
+}
+.mail {
+  text-decoration-line: underline;
+}
+address .link:hover,
+address .link:focus,
+footer .link:hover,
+footer .link:focus {
+  color: var(--accent-color);
+}
+.contacts .overtitle {
+  color: #ffffff;
+}

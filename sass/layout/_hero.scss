@@ -1,0 +1,26 @@
+.hero .container {
+    display: flex;
+  }
+  .right-side {
+    flex-grow: 1;
+    height: 680px;
+    padding-top: 270px;
+    padding-left: 90px;
+    background-image: url(../images/hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .main-title {
+    font-family: var(--add-font-family);
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 1.18;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+  }
+  .description-hero {
+    font-size: 18px;
+    line-height: 1.67;
+    color: var(--add-textcolor);
+  }

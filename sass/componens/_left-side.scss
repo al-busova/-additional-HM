@@ -1,0 +1,15 @@
+.left-side,
+.copy {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  color: var(--add-textcolor-two);
+}
+.left-side .link:hover,
+.left-side .link:focus {
+  color: var(--accent-color);
+}
+.left-side {
+  display: flex;
+  width: 94px;
+}

@@ -1,0 +1,15 @@
+.gallery {
+    padding: 130px 0;
+  }
+  .gallery .overtitle {
+    margin-bottom: 44px;
+  }
+  .gallery-list {
+    display: flex;
+  }
+  .gallery-list-item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+  .gallery-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
