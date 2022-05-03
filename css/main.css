@@ -65,22 +65,15 @@ body {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .left-side {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .left-side {
-    display: flex;
-    width: 94px;
   }
 }
 
@@ -111,12 +104,6 @@ body {
 .modal-btn.accent:focus {
   background-color: var(--accent-color);
   color: #ffffff;
-}
-
-@media screen and (max-width: 767px) {
-  .modal-btn_header {
-    display: none;
-  }
 }
 
 .overtitle {
@@ -165,45 +152,133 @@ body {
 .header .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.soc-links {
+  display: flex;
+}
+
+.soc-links__link {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.36;
+  color: var(--add-textcolor-two);
+}
+
+.soc-links .link:hover,
+.soc-links .link:focus {
+  color: var(--accent-color);
+}
+
+.soc-links::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  margin-top: 7px;
+  flex-shrink: 0;
+  margin-right: 20px;
+  background-color: rgba(157, 164, 189, 0.6);
 }
 
 @media screen and (max-width: 767px) {
-  .main-nav {
-    display: none;
-  }
-  .tel {
-    display: none;
-  }
   .logo__img {
     fill: #ffffff;
+  }
+  .hero .soc-links {
+    display: none;
+  }
+  .soc-links-mob .soc-links__item:first-child {
+    margin-bottom: 24px;
+  }
+  .soc-links-mob, .contacts-order {
+    padding: 20px 0;
+  }
+  .mobile-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 500;
+    width: 72vw;
+    height: 100vh;
+    padding-top: 118px;
+    padding-left: 50px;
+    background-color: #836e6e;
+  }
+  .mobile-menu-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .wrapper-menu__link {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.38;
+    letter-spacing: 0.1em;
+  }
+  .wrapper-menu__item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+  .tel {
+    display: block;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.38;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    margin-bottom: 24px;
+  }
+  .menu-button, .close-button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    line-height: 0;
+  }
+  .menu-button__icon {
+    fill: #ffffff;
+  }
+  .close-button {
+    position: absolute;
+    top: 48px;
+    right: 30px;
   }
 }
 
 @media screen and (min-width: 768px) {
+  .soc-links {
+    display: flex;
+    width: 94px;
+  }
   .main-nav {
     display: flex;
     align-items: center;
   }
-}
-
-.wrapper-menu {
-  display: flex;
-}
-
-.wrapper-menu__item:not(:last-child) {
-  margin-right: 40px;
+  .menu-button, .close-button {
+    display: none;
+  }
+  .wrapper-menu {
+    display: flex;
+  }
+  .wrapper-menu__item:not(:last-child) {
+    margin-right: 40px;
+  }
+  .wrapper-menu__link {
+    font-size: 12px;
+    line-height: 1.33;
+  }
+  .tel {
+    font-size: 12px;
+    line-height: 1.33;
+    margin-left: auto;
+    margin-right: 40px;
+  }
 }
 
 .logo {
   margin-right: 70px;
-}
-
-.wrapper-menu__link {
-  color: #ffffff;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
 }
 
 .main-nav .current {
@@ -217,17 +292,7 @@ body {
   color: var(--accent-color);
 }
 
-.tel {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-  color: #ffffff;
-  margin-left: auto;
-  margin-right: 40px;
-}
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .hero {
     height: 680px;
     padding-top: 208px;
@@ -256,22 +321,29 @@ body {
     height: 680px;
     padding-top: 270px;
     padding-left: 90px;
-    background-image: url(../images/hero.jpg);
+    background-image: url("../images/bg-hero-tab.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 }
 
-@media screen and (min-width: 480px) {
-  .main-title {
-    font-family: var(--add-font-family);
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 1.17;
-    letter-spacing: 0.05em;
-    color: #ffffff;
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .right-side {
+    background-image: url("../images/bg-hero-tab@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
+}
+
+.main-title {
+  font-family: var(--add-font-family);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: #ffffff;
 }
 
 @media screen and (min-width: 1200px) {
@@ -452,6 +524,9 @@ footer .link:focus {
 }
 
 .copy {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
   color: var(--add-textcolor);
 }
 /*# sourceMappingURL=main.css.map */
