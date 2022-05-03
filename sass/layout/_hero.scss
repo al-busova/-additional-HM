@@ -1,26 +1,59 @@
-.hero .container {
+ @media screen and (max-width:480px) {
+     .hero {
+        height: 680px;
+    padding-top: 208px;
+background-image: url('../images/bg-hero-mob.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+     }
+      .right-side  {
+     max-width: 306px;
+  }
+   }
+  @media (-webkit-min-device-pixel-ratio:2),
+(min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url('../images/bg-hero-mob@2x.jpg');
+  }
+}
+ @media screen and (min-width:768px) {
+   .hero .container {
     display: flex;
   }
   .right-side {
     flex-grow: 1;
     height: 680px;
     padding-top: 270px;
-    padding-left: 90px;
+    padding-left: 90px; 
     background-image: url(../images/hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
+ }
   .main-title {
-    font-family: var(--add-font-family);
-    font-weight: 700;
-    font-size: 72px;
-    line-height: 1.18;
-    letter-spacing: 0.05em;
-    color: #ffffff;
+    @media  screen and (min-width:480px) {
+      font-family: var(--add-font-family);
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 1.17;
+      letter-spacing: 0.05em;
+      color: #ffffff; 
+    }
+    @media screen and (min-width:1200px) {
+      font-size: 72px;
+      line-height: 1.18;
+    }  
   }
-  .description-hero {
-    font-size: 18px;
-    line-height: 1.67;
+.description-hero {
+  @media  screen and (min-width:480px) {
+    font-size: 16px;
+    line-height: 1.62;
     color: var(--add-textcolor);
   }
+  @media screen and (min-width:1200px) {
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}

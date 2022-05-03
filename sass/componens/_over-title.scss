@@ -1,9 +1,20 @@
 .overtitle {
-    margin-bottom: var(--margin-bottom-desc);
-    font-weight: 600;
-    font-size: 11px;
-    line-height: 1.36;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: rgba(157, 164, 189, 0.6);
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--margin-bottom-desc);
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(157, 164, 189, 0.6);
   }
+.overtitle::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  flex-shrink: 0;
+  margin-right: 20px;
+  background-color:rgba(157, 164, 189, 0.6);
+}

@@ -1,15 +1,22 @@
-.left-side,
-.copy {
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  color: var(--add-textcolor-two);
+@media screen and (max-width:767px) {
+  .left-side {
+    display: none;
+  }
 }
-.left-side .link:hover,
-.left-side .link:focus {
-  color: var(--accent-color);
-}
-.left-side {
+@media screen and (min-width:768px) {
+  .left-side {
   display: flex;
   width: 94px;
 }
+}
+// .left-side,
+// .copy {
+//   font-weight: 600;
+//   font-size: 11px;
+//   line-height: 1.36;
+//   color: var(--add-textcolor-two);
+// }
+// .left-side .link:hover,
+// .left-side .link:focus {
+//   color: var(--accent-color);
+// }
