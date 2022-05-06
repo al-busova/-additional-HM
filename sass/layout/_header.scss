@@ -16,6 +16,7 @@
 font-weight: 600;
 font-size: 14px;
 line-height: 1.36;
+letter-spacing: 0.2em;
 color: var(--add-textcolor-two);
 }
 
@@ -23,7 +24,10 @@ color: var(--add-textcolor-two);
 .soc-links .link:focus {
   color: var(--accent-color);
 }
-.soc-links::before {
+ .soc-links__wrapper {
+    display: flex;
+  }
+.soc-links__wrapper::before {
   content: "";
   display: block;
   width: 60px;
@@ -31,7 +35,7 @@ color: var(--add-textcolor-two);
   margin-top: 7px;
   flex-shrink: 0;
   margin-right: 20px;
-  background-color:rgba(157, 164, 189, 0.6);
+  background-color:var(--add-textcolor-two);
 }
 @media screen and (max-width:767px) {
    .logo__img {
@@ -40,6 +44,11 @@ color: var(--add-textcolor-two);
   .hero .soc-links {
     display: none;
   }
+ .soc-links__wrapper {
+   max-width: 192px;
+   flex-wrap: wrap;
+  justify-content: flex-end;
+ }
   .soc-links-mob .soc-links__item:first-child {
     margin-bottom: 24px;
   }
@@ -47,7 +56,7 @@ color: var(--add-textcolor-two);
     padding: 20px 0;
   }
  .mobile-menu {
-    // display: none;
+    display: none;
     position: absolute;
     top: 0;
     right: 0;
@@ -56,15 +65,15 @@ color: var(--add-textcolor-two);
     height: 100vh;
     padding-top: 118px;
     padding-left: 50px;
-    background-color: #836e6e;
+    background-color:#ffffff;
  }
- .mobile-menu-container {
+ .mobile-menu.is-open {
    display: flex;
    flex-direction: column;
    justify-content: space-between;
  }
  .wrapper-menu__link {
-  color: #ffffff;
+  color: var(--add-textcolor-two);
   font-weight: 600;
   font-size: 18px;
   line-height: 1.38;
@@ -79,7 +88,7 @@ color: var(--add-textcolor-two);
   font-size: 18px;
   line-height: 1.38;
   letter-spacing: 0.1em;
-  color: #ffffff;
+  color: var(--add-textcolor-two);
   margin-bottom: 24px;
 }
   .menu-button, .close-button {
@@ -100,7 +109,12 @@ color: var(--add-textcolor-two);
 @media screen and (min-width:768px) {
   .soc-links {
   display: flex;
+  align-items: flex-end;
   width: 94px;
+}
+.hero .soc-links__wrapper {
+   transform-origin: top left;
+  transform: rotate(-90deg);
 }
   .main-nav {
     display: flex;

@@ -8,8 +8,14 @@
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: rgba(157, 164, 189, 0.6);
+  .gallery & {
+    align-items:baseline;
   }
-.overtitle::before {
+  }
+.overtitle.overtitle-light{
+    color: var(--add-textcolor-two);
+  }
+.overtitle-dark::before {
   content: "";
   display: block;
   width: 60px;
@@ -17,4 +23,13 @@
   flex-shrink: 0;
   margin-right: 20px;
   background-color:rgba(157, 164, 189, 0.6);
+}
+.overtitle-light::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 1px;
+  flex-shrink: 0;
+  margin-right: 20px;
+  background-color:var(--add-textcolor-two);
 }

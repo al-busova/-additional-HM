@@ -1,8 +1,10 @@
-.about-company {
-    padding-top: 140px;
-    padding-bottom: 120px;
+ @media screen and (max-width:767px) {
+    .images-about-company {
+      display: none;
+    }
   }
-  .about-company .container {
+   @media screen and (min-width:768px) {
+     .about-company .container {
     display: flex;
     justify-content: space-between;
   }
@@ -13,17 +15,22 @@
   .right-side-about-company {
     padding-left: 34px;
   }
-  .images-about-company {
+    .images-about-company {
     display: flex;
   }
   .item-image-about-company:nth-child(1) {
     margin-right: 30px;
   }
+  }
   .advert-slogan {
     max-width: 500px;
     margin-bottom: var(--margin-bottom-desc);
-    font-size: 18px;
-    line-height: 1.67;
+    font-size: 16px;
+    line-height: 1.62;
+    @media screen and (min-width:1200px) {
+     font-size: 18px;
+    line-height: 1.67; 
+    }
   }
   .description-about-company {
     margin-bottom: 40px;

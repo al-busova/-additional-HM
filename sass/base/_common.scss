@@ -19,12 +19,17 @@
   }
   img {
     display: block;
+    max-width: 100%;
+    height: auto;
   }
   body {
     font-family: "Open Sans", sans-serif;
     color: var(--main-textcolor);
     letter-spacing: 0.02em;
   }
-
+section {
+  padding-top: 84px;
+  padding-bottom: 84px;
+}
 
 

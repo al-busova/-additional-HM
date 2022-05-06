@@ -1,15 +1,13 @@
-.gallery {
-    padding: 130px 0;
-  }
   .gallery .overtitle {
     margin-bottom: 44px;
   }
   .gallery-list {
     display: flex;
+    flex-direction: column;
   }
-  .gallery-list-item {
-    flex-basis: calc((100% - 90px) / 4);
-  }
-  .gallery-list-item:not(:last-child) {
-    margin-right: 30px;
+  // .gallery-list-item {
+  //   flex-basis: calc((100% - 90px) / 4);
+  // }
+  .gallery-list__item:not(:last-child) {
+    margin-bottom: var(--magin-bottom-cards);
   }

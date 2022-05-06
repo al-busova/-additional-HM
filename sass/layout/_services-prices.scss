@@ -1,11 +1,28 @@
-.services-prices .container {
-    background-image: url(../images/bg-prices.jpg), #111319;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 1200px;
+.services-prices {
+    background-image:url('../images/bg-services-prices-mob.png');
+    background-size: cover;
+    background-color: #111319;
   }
-  .services-items {
-    font-size: 18px;
-    line-height: 1.67;
-    color: var(--add-textcolor);
+  .services {
+    font-size: 14px;
+line-height: 2.14;
+     color: var(--add-textcolor);
+    
+  @media screen and (min-width:768px) {
+   font-size: 18px;
+    line-height: 1.67; 
+  }
+  }
+  .services-mob {
+    padding: 30px;
+    margin-bottom: 50px;
+background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+  }
+  .services__item {
+    display: flex;
+    justify-content: space-between;
+     margin-bottom: 20px;
+  }
+   .services_right-side .services__item:last-child {
+margin-bottom: 0;
   }

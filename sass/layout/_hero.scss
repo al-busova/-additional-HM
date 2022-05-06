@@ -42,6 +42,7 @@ background-image: url('../images/bg-hero-mob.jpg');
   }
 }
   .main-title {
+    margin-bottom: var(--margin-bottom-desc);
       font-family: var(--add-font-family);
       font-weight: 700;
       font-size: 48px;

@@ -24,4 +24,10 @@
   background-color: var(--accent-color);
   color: #ffffff;
 }
-  
+.modal-btn_light {
+  color: var(--add-textcolor-two);
+}
+.modal-btn_center {
+  display: block;
+  margin: 0 auto;
+}
