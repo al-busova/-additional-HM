@@ -24,8 +24,13 @@
   background-color: var(--accent-color);
   color: #ffffff;
 }
-.modal-btn_light {
+.modal-btn_light, .modal-btn_mob {
   color: var(--add-textcolor-two);
+}
+@media screen and (min-width:768px) {
+  .modal-btn_mob {
+    color: #ffffff;
+  }
 }
 .modal-btn_center {
   display: block;

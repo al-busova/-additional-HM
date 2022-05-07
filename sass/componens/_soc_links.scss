@@ -42,3 +42,17 @@
     padding: 20px 0;
   }
 }
+@media screen and (min-width:768px) {
+  .soc-links.soc-links_mob {
+    display: none;
+  }
+  .soc-links {
+    display: flex;
+    align-items: flex-end;
+    width: 94px;
+  }
+  .hero .soc-links__wrapper {
+    transform-origin: top left;
+    transform: rotate(-90deg);
+  }
+}

@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column-reverse;
 }
+ .total-reviews {
+  width: 450px;
+}
 .dec-reviews {
   margin-bottom: var(--margin-b-mob);
 }
@@ -50,4 +53,12 @@
   top: 8px;
   right: -13px;
   fill:var(--accent-color);
+}
+@media screen and (min-width:768px) {
+ .dec-reviews {
+  width: 500px;
+}
+.total-reviews {
+  margin-left: auto;
+}
 }

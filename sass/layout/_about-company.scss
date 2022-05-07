@@ -2,6 +2,9 @@
   .images-about {
     display: none;
   }
+  .right-side-about-company {
+    padding-left: 34px;
+  }
 }
 @media screen and (min-width:768px) {
  .about-company .container {
@@ -12,15 +15,18 @@
   .right-side-about-company {
     flex-basis: calc((100% - 30px) / 2);
   }
-  .right-side-about-company {
-    padding-left: 34px;
-  }
   .images-about {
     display: flex;
+    flex-direction: column;
   }
-  .images-about__item:nth-child(1) {
+   .images-about__item:first-child {
+    margin-bottom: var(--margin-bottom-cards);
+  } 
+}
+@media screen and (min-width:1200px) {
+ .images-about__item:nth-child(1) {
     margin-right: var(--margin-bottom-cards);
-  }
+  } 
 }
 .advert-slogan {
   max-width: 500px;

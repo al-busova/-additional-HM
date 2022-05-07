@@ -1,5 +1,6 @@
 .our-masters {
   background-color: #f7f7f7;
+
   }
 .wrapper-masters {
   display: flex;
@@ -10,6 +11,15 @@
 }
 .wrapper-masters__img {
   margin-bottom: var(--margin-bottom-cards);
+}
+@media screen and (min-width:768px) {
+  .our-masters .container {
+  padding-left: 159px;
+  padding-right: 159px;
+}
+  .wrapper-masters__item {
+    width: 450px;
+  }
 }
   // .item-master {
   //   flex-basis: calc((100% - 60px) / 3);

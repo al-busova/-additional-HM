@@ -67,35 +67,47 @@
   }
 }
 @media screen and (min-width:768px) {
-  .soc-links {
-    display: flex;
-    align-items: flex-end;
-    width: 94px;
-  }
-  .hero .soc-links__wrapper {
-    transform-origin: top left;
-    transform: rotate(-90deg);
+  .header {
+    position: absolute;
+    width: 100%;
+    padding-top: 32px;
   }
   .main-nav {
     display: flex;
     align-items: center;
+    margin-right: 48px;
   }
   .menu-button, .close-button {
     display: none;
   }
+  .mobile-menu {
+    display: flex;
+    align-items: center;
+  }
   .wrapper-menu {
     display: flex;
+    min-width: 344px;
+    justify-content: space-between;
   }
   .wrapper-menu__item:not(:last-child) {
-    margin-right: var(--margin-right);
+    margin-right: 25px;
   }
   .wrapper-menu__link, .tel {
+    display: block;
     font-size: 12px;
     line-height: 1.33;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+  }
+  .contacts-order {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
   }
   .tel {
-    margin-left: auto;
-    margin-right: var(--margin-right);
+    position: absolute;
+    bottom: -40px;
+   left: 20px;
   }
 }
 .main-nav .current {

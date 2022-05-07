@@ -55,7 +55,7 @@
           </nav>
           <div class="contacts-order">
             <a class="tel link" href="tel:+38044111111">+38 044 111 11 11</a>
-            <button class="modal-btn modal-btn_light" type="button">
+            <button class="modal-btn modal-btn_mob" type="button">
               онлайн-запись
             </button>
           </div>
@@ -130,14 +130,33 @@
         <div class="container">
           <ul class="images-about list">
             <li class="images-about__item">
-              <img
-                src="./images/img1.jpg"
-                alt="подготовка к бритью"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/img1-about-des.jpg 1x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/img1-about-tab.jpg 1x"
+                  media="(min-width:767px)"
+                />
+                <img
+                  src="./images/img1-about-des.jpg"
+                  alt="подготовка к бритью"
+                />
+              </picture>
             </li>
             <li class="images-about__item">
-              <img src="./images/img2.jpg" alt="мастер бреет шею" width="270" />
+              <picture>
+                <source
+                  srcset="./images/img2-about-des.jpg 1x"
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/img2-about-tab.jpg 1x"
+                  media="(min-width:767px)"
+                />
+                <img src="./images/img2-about-des.jpg" alt="мастер бреет шею" />
+              </picture>
             </li>
           </ul>
           <div class="right-side-about-company">
@@ -282,6 +301,10 @@
                   media="(min-width:1200px)"
                 />
                 <source
+                  srcset="./images/our-masters/img1-tab.jpg 1x"
+                  media="(min-width:768px)"
+                />
+                <source
                   srcset="./images/our-masters/img1-mob.jpg 1x"
                   media="(max-width:767px)"
                 />
@@ -328,6 +351,10 @@
                   media="(min-width:1200px)"
                 />
                 <source
+                  srcset="./images/our-masters/img2-tab.png 1x"
+                  media="(min-width:768px)"
+                />
+                <source
                   srcset="./images/our-masters/img2-mob.png 1x"
                   media="(max-width:767px)"
                 />
@@ -372,6 +399,10 @@
                 <source
                   srcset="./images/our-masters/img3-des.jpg 1x"
                   media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/our-masters/img3-tab.png 1x"
+                  media="(min-width:768px)"
                 />
                 <source
                   srcset="./images/our-masters/img3-mob.jpg 1x"
@@ -430,6 +461,10 @@
                   media="(min-width:1200px)"
                 />
                 <source
+                  srcset="./images/gallery/photo1-tab.jpg 1x"
+                  media="(min-width:768px)"
+                />
+                <source
                   srcset="./images/gallery/photo1-mob.jpg 1x"
                   media="(max-width:767px)"
                 />
@@ -445,6 +480,10 @@
                 <source
                   srcset="./images/gallery/photo2-des.jpg 1x"
                   media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/gallery/photo2-tab.jpg 1x"
+                  media="(min-width:768px)"
                 />
                 <source
                   srcset="./images/gallery/photo2-mob.jpg 1x"
@@ -464,6 +503,10 @@
                   media="(min-width:1200px)"
                 />
                 <source
+                  srcset="./images/gallery/photo3-tab.jpg 1x"
+                  media="(min-width:768px)"
+                />
+                <source
                   srcset="./images/gallery/photo3-mob.jpg 1x"
                   media="(max-width:767px)"
                 />
@@ -479,6 +522,10 @@
                 <source
                   srcset="./images/gallery/photo4-des.jpg 1x"
                   media="(min-width:1200px)"
+                />
+                <source
+                  srcset="./images/gallery/photo4-tab.jpg 1x"
+                  media="(min-width:768px)"
                 />
                 <source
                   srcset="./images/gallery/photo4-mob.jpg 1x"
