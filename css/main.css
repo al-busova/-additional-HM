@@ -5,7 +5,9 @@
   --add-textcolor-two: #303030;
   --add-font-family: Raleway, sans-serif;
   --margin-bottom-desc: 20px;
-  --magin-bottom-cards:30px;
+  --margin-bottom-cards: 30px;
+  --margin-right: 40px;
+  --main-font-size: 18px;
 }
 
 .visually-hidden {
@@ -19,6 +21,11 @@
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.overtitle {
+  display: flex;
+  align-items: center;
 }
 
 .link {
@@ -124,8 +131,6 @@ section {
 }
 
 .overtitle {
-  display: flex;
-  align-items: center;
   margin-bottom: var(--margin-bottom-desc);
   font-weight: 600;
   font-size: 11px;
@@ -150,7 +155,7 @@ section {
   height: 1px;
   flex-shrink: 0;
   margin-right: 20px;
-  background-color: rgba(157, 164, 189, 0.6);
+  background-color: #9da4bd99;
 }
 
 .overtitle-light::before {
@@ -167,19 +172,20 @@ section {
   margin-bottom: var(--margin-bottom-desc);
   font-family: var(--add-font-family);
   font-weight: 700;
-  letter-spacing: 0.05em;
-  color: var(--add-textcolor-two);
   font-size: 42px;
   line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--add-textcolor-two);
 }
 
 .title-section_about-company {
+  max-width: 330px;
   font-size: 28px;
   line-height: 1.18;
-  max-width: 330px;
 }
 
-.title-section_services-prices, .our-masters .title-section {
+.title-section_services-prices,
+.our-masters .title-section {
   margin-bottom: 44px;
 }
 
@@ -232,7 +238,7 @@ section {
   height: 1px;
   margin-top: 7px;
   flex-shrink: 0;
-  margin-right: 20px;
+  margin-right: var(--margin-bottom-desc);
   background-color: var(--add-textcolor-two);
 }
 
@@ -251,7 +257,8 @@ section {
   .soc-links-mob .soc-links__item:first-child {
     margin-bottom: 24px;
   }
-  .soc-links-mob, .contacts-order {
+  .soc-links-mob,
+  .contacts-order {
     padding: 20px 0;
   }
   .mobile-menu {
@@ -290,7 +297,8 @@ section {
     color: var(--add-textcolor-two);
     margin-bottom: 24px;
   }
-  .menu-button, .close-button {
+  .menu-button,
+  .close-button {
     border: none;
     background-color: transparent;
     padding: 0;
@@ -320,7 +328,8 @@ section {
     display: flex;
     align-items: center;
   }
-  .menu-button, .close-button {
+  .menu-button,
+  .close-button {
     display: none;
   }
   .wrapper-menu {
@@ -370,7 +379,9 @@ section {
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .hero {
     background-image: url("../images/bg-hero-mob@2x.jpg");
   }
@@ -392,7 +403,9 @@ section {
   }
 }
 
-@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .right-side {
     background-image: url("../images/bg-hero-tab@2x.jpg");
     background-repeat: no-repeat;
@@ -434,7 +447,7 @@ section {
 }
 
 @media screen and (max-width: 767px) {
-  .images-about-company {
+  .images-about {
     display: none;
   }
 }
@@ -455,7 +468,7 @@ section {
     display: flex;
   }
   .item-image-about-company:nth-child(1) {
-    margin-right: 30px;
+    margin-right: var(--margin-bottom-cards);
   }
 }
 
@@ -502,7 +515,7 @@ section {
 .services-mob {
   padding: 30px;
   margin-bottom: 50px;
-  background: linear-gradient(180deg, #171A24 0%, rgba(23, 26, 36, 0.2) 100%);
+  background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
 }
 
 .services__item {
@@ -529,7 +542,7 @@ section {
   line-height: 1.67;
 }
 
-.num-reviewes {
+.total-reviews__num {
   position: relative;
   font-weight: 700;
   font-size: 42px;
@@ -539,7 +552,7 @@ section {
   color: var(--add-textcolor-two);
 }
 
-.description-num-rev {
+.total-reviews__description {
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -557,10 +570,10 @@ section {
   padding: 20px 30px;
   width: 194px;
   height: 134px;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
 }
 
-.total-reviews__item:nth-child(2n+1) {
+.total-reviews__item:nth-child(2n + 1) {
   margin-bottom: 30px;
 }
 
@@ -576,7 +589,7 @@ section {
   position: absolute;
   top: 8px;
   right: -13px;
-  fill: #FF6C00;
+  fill: #ff6c00;
 }
 
 .our-masters {
@@ -630,11 +643,11 @@ section {
 }
 
 .gallery-list__item:not(:last-child) {
-  margin-bottom: var(--magin-bottom-cards);
+  margin-bottom: var(--margin-bottom-cards);
 }
 
 .form-footer {
-  background-color: #191C26;
+  background-color: #191c26;
 }
 
 .contacts {

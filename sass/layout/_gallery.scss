@@ -1,5 +1,5 @@
   .gallery .overtitle {
-    margin-bottom: 44px;
+    margin-bottom: var(--margin-b-mob);
   }
   .gallery-list {
     display: flex;
@@ -9,5 +9,5 @@
   //   flex-basis: calc((100% - 90px) / 4);
   // }
   .gallery-list__item:not(:last-child) {
-    margin-bottom: var(--magin-bottom-cards);
+    margin-bottom: var(--margin-bottom-cards);
   }

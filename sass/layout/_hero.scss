@@ -1,17 +1,20 @@
- @media screen and (max-width:767px) {
-     .hero {
-        height: 680px;
-    padding-top: 208px;
-background-image: url('../images/bg-hero-mob.jpg');
+%backg-img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-     }
-      .right-side  {
-     max-width: 306px;
+}
+@media screen and (max-width:767px) {
+  .hero {
+    height: 680px;
+    padding-top: 208px;
+    background-image: url('../images/bg-hero-mob.jpg');
+    @extend %backg-img;
   }
-   }
-  @media (-webkit-min-device-pixel-ratio:2),
+  .right-side  {
+    max-width: 306px;
+  }
+}
+@media (-webkit-min-device-pixel-ratio:2),
 (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
     background-image: url('../images/bg-hero-mob@2x.jpg');
@@ -27,33 +30,29 @@ background-image: url('../images/bg-hero-mob.jpg');
     padding-top: 270px;
     padding-left: 90px; 
     background-image: url("../images/bg-hero-tab.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  @media (-webkit-min-device-pixel-ratio:2),
-  (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    .right-side {
-    background-image: url("../images/bg-hero-tab@2x.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    }
+    @extend %backg-img;
   }
 }
-  .main-title {
-    margin-bottom: var(--margin-bottom-desc);
-      font-family: var(--add-font-family);
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 1.17;
-      letter-spacing: 0.05em;
-      color: #ffffff; 
-    @media screen and (min-width:1200px) {
-      font-size: 72px;
-      line-height: 1.18;
-    }  
+@media (-webkit-min-device-pixel-ratio:2),
+(min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .right-side {
+    background-image: url("../images/bg-hero-tab@2x.jpg");
+    @extend %backg-img;
   }
+}
+.main-title {
+  margin-bottom: var(--margin-bottom-desc);
+  font-family: var(--add-font-family);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: #ffffff; 
+  @media screen and (min-width:1200px) {
+    font-size: 72px;
+    line-height: 1.18;
+  }  
+}
 .description-hero {
   @media  screen and (min-width:480px) {
     font-size: 16px;

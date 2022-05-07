@@ -1,6 +1,6 @@
 .footer  {
-  padding-top: 44px;
-  padding-bottom: 44px;
+  padding-top: var(--margin-b-mob);
+  padding-bottom: var(--margin-b-mob);
 }
 .footer .container {
   display: flex;
@@ -11,16 +11,16 @@
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-    color: var(--add-textcolor);
+  color: var(--add-textcolor);
   }
 .footer .soc-links__wrapper {
   flex-wrap: nowrap;
 }
 .footer .soc-links__link {
-font-size: 11px;
+  font-size: 11px;
 }
-.soc-links__item:not(:last-child) {
-  margin-right: 40px;
+.footer .soc-links__item:not(:last-child) {
+  margin-right: var(--margin-right);
 }
 .footer .soc-links__wrapper::before {
   content: "";
@@ -28,6 +28,6 @@ font-size: 11px;
   width: 60px;
   height: 1px;
   flex-shrink: 0;
-  margin-right: 40px;
+  margin-right: var(--margin-right);
   background-color:var(--add-textcolor-two);
 }

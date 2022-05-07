@@ -1,32 +1,32 @@
 .link {
-    text-decoration: none;
-  }
-  .list {
-    list-style: none;
-  }
-  h1,
-  h2,
-  h3,
-  p {
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  ul,
-  ol {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-  }
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
-  body {
-    font-family: "Open Sans", sans-serif;
-    color: var(--main-textcolor);
-    letter-spacing: 0.02em;
-  }
+  text-decoration: none;
+}
+.list {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  color: var(--main-textcolor);
+  letter-spacing: 0.02em;
+}
 section {
   padding-top: 84px;
   padding-bottom: 84px;

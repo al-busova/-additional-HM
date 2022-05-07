@@ -1,19 +1,19 @@
 .title-section {
-    margin-bottom: var(--margin-bottom-desc);
-    font-family: var(--add-font-family);
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    color: var(--add-textcolor-two);
-    font-size: 42px;
-    line-height: 1.17;
+  margin-bottom: var(--margin-bottom-desc);
+  font-family: var(--add-font-family);
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: var(--add-textcolor-two);
 }
 .title-section_about-company {
+  max-width: 330px;
   font-size: 28px;
   line-height: 1.18;
-  max-width: 330px;
 }
 .title-section_services-prices, .our-masters .title-section {
-  margin-bottom: 44px;
+  margin-bottom: var(--margin-b-mob);
 }
 .title-section.dark-bg {
   color: #ffffff;
